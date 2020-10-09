@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background-color:#BF9E75;
 }
 
 body {
@@ -14,15 +15,17 @@ h1 {
     padding: 1em;
     color: #1A2614;
     color: rgba(0,0,0,0.6);
-    text-shadow: 2px 2px 3px rgba(191,158,117,0.3);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.2);
 }
 
 h2 {
     font-family: 'Fanwood Text', serif;
     font-weight: 700;
-    color: rgba(0,0,0,0.6);
+    font-size: 3rem;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.2);
     
-
+    margin: 0;
+    color: #878C5E;
 }
 
 /* ************************************NAV BAR*/
@@ -31,7 +34,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     background-color: #1A2614;
-    background-color: rgba(26, 38, 20, .3);
+    background-color: rgba(26, 38, 20, .4);
     position: fixed;
     
 }
@@ -73,32 +76,45 @@ nav {
 }
 
 #welcome-section h2 {
-    
     padding-left: 5rem;
     font-size: 5rem;
-    margin: 0;
-    -webkit-text-stroke-width: .5px;
-    -webkit-text-stroke-color: #515932;
-    color: #878C5E;
+    
 }
 
 /******************************PROJECT SECTION*/
 #projects {
-    background-color: #BF9E75;
-    margin: 0;
+    background-color: #1A2614;
+    margin: 1rem;
     padding: 1em;
-}
-#project-tile {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    border-width: 3px;
 
 }
-figure img{
-    width:300px;
+.project-tile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
 }
+figure {
+    
+    box-shadow: 5px 5px 6px rgba(0,0,0,0.4);
+    
+}
+.resize-img {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+#projects h2{
+    
+    padding-left: 1em;
+    text-shadow: 2px 2px 3px rgba(255,255,255, .1);
+}
+
 figcaption {
-    background-color: #303841;
+    
+    
     color: white;
     font-size: 1rem;
     position: relative;
@@ -108,6 +124,7 @@ figcaption {
     width: inherit;
 }
 /******************************CONTACT SECTION*/
+    
 
 /***************************************FOOTER*/
 
